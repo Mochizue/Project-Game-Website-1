@@ -1,0 +1,296 @@
+*{
+  margin: 0;
+  font-size: 12px;
+  color: white;
+  font-family: montserrat;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+html, body{
+  background-color: #0f0000;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
+  height: 97vh;
+}
+
+.main-container{
+  flex: 1;
+  border-radius: 10px;
+  background-color: #1f0000;
+  transition: all 0.30s ease-in-out;
+  opacity: 0.4;
+  background-image: url(./Images/Smoke-girl-wallpaper.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
+.main-container:hover{
+  box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.5);
+  opacity: 0.7;
+  background-image: url(./Images/Katana-girl-wallpaper.jpg);
+}
+
+header{
+  height: 90px;
+  flex: 1;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+header > div{
+  height: 90px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 30px;
+  list-style: none;
+}
+
+#header-left{
+  gap: 5px;
+}
+
+#header-right{
+  justify-content: end;
+  gap: 30px;
+}
+
+#header-right > li{
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.20s ease-in-out;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+#nav-bar-squashed{
+  padding: 5px 5px;
+  width: 33px;
+  border-radius: 5px;
+  transition: all 0.20s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+#nav-bar-squashed:hover{
+  background-color: #5c0000;
+}
+
+#header-right > li:hover{
+  background-color: #5c0000;
+}
+
+header > div > img{
+  width: 200px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#equalizer, #war{
+  width: 30px;
+  cursor: pointer;
+  transition: all 0.10s ease-in-out;
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+
+#war:hover{
+  background-color: #5c0000;
+}
+
+#equalizer:hover{
+  background-color: #5c0000;
+}
+
+.log-in > img{
+  width: 30px;
+  cursor: pointer;
+  transition: all 0.10s ease-in-out;
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+
+.log-in > img:hover{
+  background-color: #5c0000;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 655px;
+}
+
+.content > #left{
+  flex: 22;
+  height: 655px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+} 
+
+#left > div{
+  flex: 1;
+  height: 655px;
+}
+
+.content-left{
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 25px;
+}
+
+.content-left > p{
+  font-size: 50px;
+  font-weight: 700;
+}
+
+#description{
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  max-width: 790px;
+}
+
+button{
+  background-color: #5c0000;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.20s ease-in-out;
+}
+
+button:hover{
+  background-color: white;
+  color: #5c0000;
+}
+
+.content > #right{
+  flex: 1;
+  height: 655px;
+}
+
+footer{
+  height: 70px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+footer > div{
+  flex: 1;
+  height: 70px;
+  gap: 15px;
+}
+
+footer > *{
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 25px;
+}
+
+footer > div > div > img{
+  width: 30px;
+  cursor: pointer;
+}
+
+#footer-text{
+  justify-content: end;
+  padding-right: 40px;
+}
+
+#footer-text > p{
+  font-weight: 700;
+}
+
+.content-right{
+  display: none;
+}
+
+#right{
+  display: none;
+}
+
+/*Media Queries*/
+@media (max-width: 680px){
+  #header-right{
+    opacity: 0;
+  }
+
+  #header-right > li{
+    opacity: 0;
+  }
+
+  #header-right > .log-in{
+    opacity: 0;
+  }
+
+  #header-left > li > #nav-bar-squashed{
+    opacity: 1;
+  }
+
+  .content-left > p{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .content-left > #title{
+    font-size: 45px;
+    margin-bottom: 10px;
+  }
+
+  #left > .content-left{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .content-right{
+    opacity: 0;
+  }
+
+  .content-left{
+    
+  }
+
+  #right{
+    opacity: 0;
+  }
+
+  #footer-text{
+    padding-right: 20px;
+    justify-content: end;
+  }
+
+  #footer-text > p{
+    font-size: 9px;
+    text-align: right;
+  }
+  
+}
